@@ -20,12 +20,14 @@ int main(int argc, char **argv)
 	for ( ;; ) {
 
 		// Turn it on
+	        printf("Turning LED On\n");
 		io.write( 23, HIGH );
 
 		// Wait some time
 		time::sleep(1);
 
 		// Turn it off
+	        printf("Turning LED Off\n");
 		io.write( 23, LOW );
 
 		// Wait some time
